@@ -17,7 +17,8 @@ namespace MegaDesk
 
         private void ViewAllQuotes_Load(object sender, EventArgs e)
         {
-            allQuotesLabel.Text = DatabaseHandler.GetAllQuotes(); ;
+            List<DeskQuote> deskQuotes = DatabaseHandler.GetAllJsonQuotes();
+            // HERE IS WHERE YOU WILL PARSE THE LIST OF DESK QUOTES TO DISPLAY THEM
         }
 
         private void label1_Click(object sender, EventArgs e)

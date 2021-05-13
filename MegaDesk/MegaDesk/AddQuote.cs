@@ -75,9 +75,7 @@ namespace MegaDesk
                 {
                     double totalPrice = deskQuote.GetTotalPrice();
                     data = deskQuote.QuoteToString();
-                    StreamWriter writer = new StreamWriter("quotes.txt", true);
-                    writer.WriteLine(data);
-                    writer.Close();
+                    DatabaseHandler.StoreJsonQuote(deskQuote);
                     DisplayQuote displayQuote = new DisplayQuote();
                     displayQuote.Show();
                     this.Hide();

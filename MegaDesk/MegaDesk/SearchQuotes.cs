@@ -22,9 +22,9 @@ namespace MegaDesk
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            string data = "width,depth,surface_material,num_drawers,rush_days,first_name,last_name,total_price";
-            data += DatabaseHandler.FindQuotes(materialTypeSeachCombo.SelectedItem.ToString().ToLower());
-            searchedData.Text = data;
+            List<DeskQuote> deskQuotes = DatabaseHandler.SearchDeskQuotes(materialTypeSeachCombo.SelectedItem.ToString().ToLower());
+            // THIS IS THE LIST OF DESK QUOTES THAT MATCH THE STRING INPUT FOR THE MATERIAL TYPE
+            // HERE IS WHERE YOU NEED TO LOAD THEM IN FROM A LIST OF DESK QUOTE OBJECTS
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

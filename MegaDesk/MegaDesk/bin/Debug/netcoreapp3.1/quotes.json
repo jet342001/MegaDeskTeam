@@ -1,0 +1,28 @@
+[
+  {
+    "desk": {
+      "width": 24.0,
+      "depth": 24.0,
+      "numDrawers": 0,
+      "surfaceMaterialType": "Oak"
+    },
+    "rushOrderDays": 3,
+    "totalPrice": 460.0,
+    "customerFirstName": "UR",
+    "customerLastName": "MUM",
+    "quoteDate": "2021-05-12T22:40:03.9991569-06:00"
+  },
+  {
+    "desk": {
+      "width": 24.0,
+      "depth": 24.0,
+      "numDrawers": 0,
+      "surfaceMaterialType": "Oak"
+    },
+    "rushOrderDays": 3,
+    "totalPrice": 460.0,
+    "customerFirstName": "TACO",
+    "customerLastName": "BELL",
+    "quoteDate": "2021-05-12T22:40:51.3056607-06:00"
+  }
+]

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MegaDesk
 {
-    class DeskQuote
+    public class DeskQuote
     {
         public DeskQuote()
         {
@@ -16,7 +16,7 @@ namespace MegaDesk
         public string customerLastName;
         public DateTime quoteDate = DateTime.Now;
 
-        internal bool CheckValidInputs()
+        public bool CheckValidInputs()
         {
             double widthMin = 24;
             double widthMax = 96;
@@ -26,10 +26,10 @@ namespace MegaDesk
             {
                 return true;
             }
-                return false;
+            return false;
         }
 
-        internal double CalculateTotalPrice()
+        public double CalculateTotalPrice()
         {
             double basePrice = 200;
             double rushPrice = CalculateRushPrice();
@@ -39,7 +39,7 @@ namespace MegaDesk
             return totalPrice;
         }
 
-        internal double CalculateSurfacePrice()
+        public double CalculateSurfacePrice()
         {
             double deskSurfaceArea = desk.GetWidth() * desk.GetDepth();
             if (deskSurfaceArea > 1000)
@@ -48,7 +48,7 @@ namespace MegaDesk
             }
             return 0;
         }
-        internal double CalculateSurfaceMaterialPrice()
+        public double CalculateSurfaceMaterialPrice()
         {
 
             if (desk.surfaceMaterialType.ToLower() == "oak")
@@ -74,12 +74,12 @@ namespace MegaDesk
             return 0;
         }
 
-        internal double CalculateDrawerPrice()
+        public double CalculateDrawerPrice()
         {
             return desk.numDrawers * 50;
         }
 
-        internal double CalculateRushPrice()
+        public double CalculateRushPrice()
         {
             double deskSurfaceArea = desk.GetWidth() * desk.GetDepth();
             if (rushOrderDays == 0)
@@ -161,8 +161,9 @@ namespace MegaDesk
             stringQuote = stringQuote + this.totalPrice.ToString().ToLower();
             return stringQuote;
         }
+
     }
 
 }
 
-    
+

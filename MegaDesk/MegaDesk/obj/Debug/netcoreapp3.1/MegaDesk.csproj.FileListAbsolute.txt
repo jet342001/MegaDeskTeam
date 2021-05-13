@@ -18,3 +18,5 @@ C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDes
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.dll
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.pdb
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.genruntimeconfig.cache
+C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CopyComplete

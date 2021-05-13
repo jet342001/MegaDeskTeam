@@ -1,16 +1,1 @@
 width,depth,surface_material,num_drawers,rush_days,first_name,last_name,total_price
-24,24,,0,3,Coty,Fivecoat,260
-
-24,24,,0,3,Taco,Bell,260
-24,24,,0,3,Coty,F,260
-24,24,,0,3,T,T,260
-24,24,,0,3,T,T,260
-24,24,,0,3,F,A,260
-24,24,,0,3,F,A,260
-24,24,,0,3,asdf,asdf,260
-24,24,Oak,0,3,Coty,Fivecoat,460
-24,24,laminate,0,3,c,f,360
-24,24,oak,2,3,coty,fivecoat,560
-24,24,oak,0,3,coty,fivecoat,460
-24,24,pine,0,3,coty,fivecoat,310
-24,24,oak,7,5,coty,fivecoat,790

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MegaDesk
 {
-    class Desk
+    public class Desk
     {
 
         public double width;

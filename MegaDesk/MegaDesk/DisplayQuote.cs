@@ -18,7 +18,7 @@ namespace MegaDesk
 
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            quoteData.Text = DatabaseHandler.GetLastQuote();
+            
         }
 
         private void mainMenu_Click(object sender, EventArgs e)
