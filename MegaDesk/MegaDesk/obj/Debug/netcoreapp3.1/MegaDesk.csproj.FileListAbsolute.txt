@@ -20,3 +20,25 @@ C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDes
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.genruntimeconfig.cache
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Mountain\source\repos\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CopyComplete
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.exe
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.deps.json
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.runtimeconfig.json
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.runtimeconfig.dev.json
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.dll
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.pdb
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csprojAssemblyReference.cache
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AddQuote.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.DisplayQuote.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.MainMenu.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.Properties.Resources.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.SearchQuotes.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.ViewAllQuotes.resources
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.GenerateResource.cache
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AssemblyInfoInputs.cache
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AssemblyInfo.cs
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CoreCompileInputs.cache
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CopyComplete
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.dll
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.pdb
+C:\Users\Stephen Gee\source\repos\Team\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.genruntimeconfig.cache
