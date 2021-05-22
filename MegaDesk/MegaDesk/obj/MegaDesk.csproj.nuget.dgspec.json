@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stephen Gee\\source\\repos\\Team\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {}
+    "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stephen Gee\\source\\repos\\Team\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {
+    "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stephen Gee\\source\\repos\\Team\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
+        "projectUniqueName": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
         "projectName": "MegaDesk",
-        "projectPath": "C:\\Users\\Stephen Gee\\source\\repos\\Team\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
-        "packagesPath": "C:\\Users\\Stephen Gee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stephen Gee\\source\\repos\\Team\\MegaDesk\\MegaDesk\\obj\\",
+        "projectPath": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stephen Gee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
