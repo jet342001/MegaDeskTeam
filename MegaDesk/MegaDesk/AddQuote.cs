@@ -95,14 +95,70 @@ namespace MegaDesk
             }
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void AddQuote_Load(object sender, EventArgs e)
         {
             surfaceMaterialInput.Text = "Oak";
+        }
+
+        private void fNameValidating(object sender, CancelEventArgs e)
+        {
+            if (firstNameInput.Text == "")
+            {
+                MessageBox.Show("First name must be filled out");
+            }
+        }
+
+        private void lNameValidating(object sender, CancelEventArgs e)
+        {
+            if (lastNameInput.Text == "")
+            {
+                MessageBox.Show("Last name must be filled out");
+            }
+        }
+
+        private void widthValidating(object sender, CancelEventArgs e)
+        {
+            if (widthInput.Text == "")
+            {
+                MessageBox.Show("Width must be filled out");
+            }
+            else
+            {
+                try
+                {
+                    if (int.Parse(widthInput.Text) < 24 || int.Parse(widthInput.Text) > 96)
+                    {
+                        MessageBox.Show("width minimum 24 inches and maximum 96 inches");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Invalit Width");
+                }
+            }
+        }
+
+        private void depthValidating(object sender, CancelEventArgs e)
+        {
+            if (depthInput.Text == "")
+            {
+                MessageBox.Show("Depth must be filled out");
+            }
+            else
+            {
+                try
+                {
+                    if (int.Parse(depthInput.Text) < 12 || int.Parse(depthInput.Text) > 48)
+                    {
+                        MessageBox.Show("Depth minimum 12 inches and maximum of 48 inches");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Invalit Depth");
+                }
+            }
         }
     }
 }

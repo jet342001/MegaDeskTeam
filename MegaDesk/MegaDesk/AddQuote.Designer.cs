@@ -135,6 +135,7 @@ namespace MegaDesk
             this.firstNameInput.Name = "firstNameInput";
             this.firstNameInput.Size = new System.Drawing.Size(262, 23);
             this.firstNameInput.TabIndex = 7;
+            this.firstNameInput.Validating += new System.ComponentModel.CancelEventHandler(this.fNameValidating);
             // 
             // lastNameInput
             // 
@@ -143,6 +144,7 @@ namespace MegaDesk
             this.lastNameInput.Name = "lastNameInput";
             this.lastNameInput.Size = new System.Drawing.Size(262, 23);
             this.lastNameInput.TabIndex = 12;
+            this.lastNameInput.Validating += new System.ComponentModel.CancelEventHandler(this.lNameValidating);
             // 
             // widthInput
             // 
@@ -151,6 +153,7 @@ namespace MegaDesk
             this.widthInput.Name = "widthInput";
             this.widthInput.Size = new System.Drawing.Size(262, 23);
             this.widthInput.TabIndex = 13;
+            this.widthInput.Validating += new System.ComponentModel.CancelEventHandler(this.widthValidating);
             // 
             // depthInput
             // 
@@ -159,6 +162,7 @@ namespace MegaDesk
             this.depthInput.Name = "depthInput";
             this.depthInput.Size = new System.Drawing.Size(262, 23);
             this.depthInput.TabIndex = 14;
+            this.depthInput.Validating += new System.ComponentModel.CancelEventHandler(this.depthValidating);
             // 
             // label7
             // 
@@ -221,7 +225,6 @@ namespace MegaDesk
             this.label8.Size = new System.Drawing.Size(302, 180);
             this.label8.TabIndex = 23;
             this.label8.Text = resources.GetString("label8.Text");
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // successLabel
             // 
