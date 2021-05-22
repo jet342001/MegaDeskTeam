@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {}
+    "C:\\Users\\13853\\Documents\\School\\Spring2021\\CIT365_.NET\\week05\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {}
   },
   "projects": {
-    "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {
+    "C:\\Users\\13853\\Documents\\School\\Spring2021\\CIT365_.NET\\week05\\MegaDesk\\MegaDesk\\MegaDesk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
+        "projectUniqueName": "C:\\Users\\13853\\Documents\\School\\Spring2021\\CIT365_.NET\\week05\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
         "projectName": "MegaDesk",
-        "projectPath": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\BYUI\\CIT 365\\group\\MegaDesk\\MegaDesk\\obj\\",
+        "projectPath": "C:\\Users\\13853\\Documents\\School\\Spring2021\\CIT365_.NET\\week05\\MegaDesk\\MegaDesk\\MegaDesk.csproj",
+        "packagesPath": "C:\\Users\\13853\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\13853\\Documents\\School\\Spring2021\\CIT365_.NET\\week05\\MegaDesk\\MegaDesk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\13853\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
