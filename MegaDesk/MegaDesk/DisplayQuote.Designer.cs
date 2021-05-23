@@ -37,24 +37,29 @@ namespace MegaDesk
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(792, 50);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(29, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 32);
+            this.label1.Size = new System.Drawing.Size(176, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "Your Quote";
             // 
             // quoteData
             // 
-            this.quoteData.Location = new System.Drawing.Point(461, 214);
+            this.quoteData.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.quoteData.Location = new System.Drawing.Point(29, 85);
+            this.quoteData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.quoteData.Name = "quoteData";
-            this.quoteData.Size = new System.Drawing.Size(881, 466);
+            this.quoteData.Size = new System.Drawing.Size(678, 364);
             this.quoteData.TabIndex = 1;
             // 
             // mainMenu
             // 
-            this.mainMenu.Location = new System.Drawing.Point(1192, 43);
+            this.mainMenu.Location = new System.Drawing.Point(225, 30);
+            this.mainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(150, 46);
+            this.mainMenu.Size = new System.Drawing.Size(115, 36);
             this.mainMenu.TabIndex = 2;
             this.mainMenu.Text = "Main Menu";
             this.mainMenu.UseVisualStyleBackColor = true;
@@ -62,12 +67,13 @@ namespace MegaDesk
             // 
             // DisplayQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1834, 978);
+            this.ClientSize = new System.Drawing.Size(1411, 764);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.quoteData);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DisplayQuote";
             this.Text = "Your Quote";
             this.Load += new System.EventHandler(this.DisplayQuote_Load);

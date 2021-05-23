@@ -1,80 +1,41 @@
 [
   {
     "desk": {
-      "width": 24.0,
-      "depth": 24.0,
-      "numDrawers": 0,
-      "surfaceMaterialType": "Oak"
-    },
-    "rushOrderDays": 3,
-    "totalPrice": 460.0,
-    "customerFirstName": "UR",
-    "customerLastName": "MUM",
-    "quoteDate": "2021-05-12T23:40:03.9991569-05:00"
-  },
-  {
-    "desk": {
-      "width": 24.0,
-      "depth": 24.0,
-      "numDrawers": 0,
-      "surfaceMaterialType": "Oak"
-    },
-    "rushOrderDays": 3,
-    "totalPrice": 460.0,
-    "customerFirstName": "TACO",
-    "customerLastName": "BELL",
-    "quoteDate": "2021-05-12T23:40:51.3056607-05:00"
-  },
-  {
-    "desk": {
-      "width": 33.0,
-      "depth": 33.0,
-      "numDrawers": 3,
-      "surfaceMaterialType": "Oak"
-    },
-    "rushOrderDays": 3,
-    "totalPrice": 709.0,
-    "customerFirstName": "s",
-    "customerLastName": "s",
-    "quoteDate": "2021-05-19T23:02:14.8619454-05:00"
-  },
-  {
-    "desk": {
-      "width": 33.0,
-      "depth": 33.0,
+      "width": 35.0,
+      "depth": 40.0,
       "numDrawers": 1,
       "surfaceMaterialType": "Oak"
     },
     "rushOrderDays": 3,
-    "totalPrice": 609.0,
-    "customerFirstName": "Test",
-    "customerLastName": "test",
-    "quoteDate": "2021-05-20T17:20:55.4313102-05:00"
+    "totalPrice": 920.0,
+    "customerFirstName": "John",
+    "customerLastName": "Doe",
+    "quoteDate": "2021-05-22T22:46:31.036677-06:00"
   },
   {
     "desk": {
-      "width": 76.0,
-      "depth": 34.0,
-      "numDrawers": 4,
-      "surfaceMaterialType": "pine"
-    },
-    "rushOrderDays": 5,
-    "totalPrice": 2094.0,
-    "customerFirstName": "cs",
-    "customerLastName": "cs",
-    "quoteDate": "2021-05-21T18:44:58.7729689-05:00"
-  },
-  {
-    "desk": {
-      "width": 76.0,
-      "depth": 34.0,
-      "numDrawers": 4,
+      "width": 28.0,
+      "depth": 30.0,
+      "numDrawers": 2,
       "surfaceMaterialType": "Pine"
     },
+    "rushOrderDays": 7,
+    "totalPrice": 380.0,
+    "customerFirstName": "Jane",
+    "customerLastName": "Doe",
+    "quoteDate": "2021-05-22T22:47:20.8615605-06:00"
+  },
+  {
+    "desk": {
+      "width": 70.0,
+      "depth": 40.0,
+      "numDrawers": 1,
+      "surfaceMaterialType": "Laminate"
+    },
     "rushOrderDays": 5,
-    "totalPrice": 2094.0,
-    "customerFirstName": "cs",
-    "customerLastName": "cs",
-    "quoteDate": "2021-05-21T19:26:48.9938826-05:00"
+    "totalPrice": 2210.0,
+    "customerFirstName": "Sam",
+    "customerLastName": "Johnson",
+    "quoteDate": "2021-05-22T22:47:37.4819683-06:00"
   }
 ]

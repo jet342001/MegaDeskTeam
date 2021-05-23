@@ -53,6 +53,7 @@ namespace MegaDesk
             // IT WILL NEED TO BE UPDATED FOR THE SURFACE MATERIAL TYPE ENUM WHEN YOU CREATE IT
             // BUT THAT SHOULD BE EASY
             List <DeskQuote> deskQuotes = GetAllJsonQuotes();
+            var filteredDeskQuotes = new List<DeskQuote>();
             foreach (DeskQuote deskQuote in deskQuotes)
             {
                 if (deskQuote.desk.GetSurfaceMaterial() == surfaceMaterialType)

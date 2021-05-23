@@ -75,8 +75,19 @@ namespace MegaDesk
                 {
                     double totalPrice = deskQuote.GetTotalPrice();
                     data = deskQuote.QuoteToString();
+                    double rushPrice = deskQuote.CalculateRushPrice();
                     DatabaseHandler.StoreJsonQuote(deskQuote);
-                    DisplayQuote displayQuote = new DisplayQuote();
+                    DisplayQuote displayQuote = new DisplayQuote(
+                        width,
+                        depth,
+                        numDrawers,
+                        rushDays,
+                        surfaceMaterial,
+                        firstName,
+                        lastName,
+                        totalPrice,
+                        rushPrice
+                    );
                     displayQuote.Show();
                     this.Hide();
                 }
@@ -161,5 +172,4 @@ namespace MegaDesk
             }
         }
     }
-    // test123
 }

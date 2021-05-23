@@ -19,6 +19,19 @@ namespace MegaDesk
         {
             List<DeskQuote> deskQuotes = DatabaseHandler.GetAllJsonQuotes();
             // HERE IS WHERE YOU WILL PARSE THE LIST OF DESK QUOTES TO DISPLAY THEM
+
+            
+            foreach (var quote in deskQuotes)
+            {
+                allQuotesLabel.Text += "Date: " + quote.quoteDate + "\n";
+                allQuotesLabel.Text += "Name: " + quote.customerFirstName + " " + quote.customerLastName + "\n";
+                allQuotesLabel.Text += "Surface Material: " + quote.desk.GetSurfaceMaterial() + "\n";
+                allQuotesLabel.Text += "Price:" + quote.totalPrice.ToString("C2") + "\n";
+                allQuotesLabel.Text += "\n";
+            }
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,6 +49,11 @@ namespace MegaDesk
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

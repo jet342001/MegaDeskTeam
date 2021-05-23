@@ -64,3 +64,25 @@ D:\BYUI\CIT 365\group\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.
 D:\BYUI\CIT 365\group\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.dll
 D:\BYUI\CIT 365\group\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.pdb
 D:\BYUI\CIT 365\group\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.genruntimeconfig.cache
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.exe
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.deps.json
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.runtimeconfig.json
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.runtimeconfig.dev.json
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.dll
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\MegaDesk.pdb
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csprojAssemblyReference.cache
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AddQuote.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.DisplayQuote.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.MainMenu.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.Properties.Resources.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.SearchQuotes.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.ViewAllQuotes.resources
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.GenerateResource.cache
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AssemblyInfoInputs.cache
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.AssemblyInfo.cs
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CoreCompileInputs.cache
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.csproj.CopyComplete
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.dll
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.pdb
+C:\Users\13853\Documents\School\Spring2021\CIT365_.NET\week05\MegaDesk\MegaDesk\obj\Debug\netcoreapp3.1\MegaDesk.genruntimeconfig.cache

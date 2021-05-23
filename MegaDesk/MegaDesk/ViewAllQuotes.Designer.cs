@@ -37,25 +37,28 @@ namespace MegaDesk
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(886, 52);
+            this.label1.Location = new System.Drawing.Point(682, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 32);
+            this.label1.Size = new System.Drawing.Size(137, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "View All Quotes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // allQuotesLabel
             // 
-            this.allQuotesLabel.Location = new System.Drawing.Point(494, 96);
+            this.allQuotesLabel.Location = new System.Drawing.Point(380, 149);
+            this.allQuotesLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.allQuotesLabel.Name = "allQuotesLabel";
-            this.allQuotesLabel.Size = new System.Drawing.Size(1000, 818);
+            this.allQuotesLabel.Size = new System.Drawing.Size(769, 565);
             this.allQuotesLabel.TabIndex = 3;
             // 
             // mainMenu
             // 
-            this.mainMenu.Location = new System.Drawing.Point(1268, 38);
+            this.mainMenu.Location = new System.Drawing.Point(975, 30);
+            this.mainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(150, 46);
+            this.mainMenu.Size = new System.Drawing.Size(115, 36);
             this.mainMenu.TabIndex = 4;
             this.mainMenu.Text = "Main Menu";
             this.mainMenu.UseVisualStyleBackColor = true;
@@ -63,12 +66,13 @@ namespace MegaDesk
             // 
             // ViewAllQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1916, 930);
+            this.ClientSize = new System.Drawing.Size(1474, 727);
             this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.allQuotesLabel);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
             this.Load += new System.EventHandler(this.ViewAllQuotes_Load);
