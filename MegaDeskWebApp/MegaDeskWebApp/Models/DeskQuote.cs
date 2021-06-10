@@ -8,7 +8,7 @@ namespace MegaDeskWebApp.Models
 {
     public class DeskQuote
     {
-
+        private double _totalPrice;
         const double WidthMin = 24;
         const double WidthMax = 96;
         const double DepthMin = 12;
@@ -54,9 +54,16 @@ namespace MegaDeskWebApp.Models
 
         public DateTime QuoteDate => DateTime.Now;
 
-        [NotMapped]
         [Display(Name = "Total Price")]
-        public double TotalPrice => CalculateTotalPrice();
+        public double TotalPrice
+        {
+            get
+            {
+                _totalPrice = _totalPrice == 0 ? CalculateTotalPrice() : _totalPrice;
+                return _totalPrice;
+            }
+            set => _totalPrice = value;
+        }
 
 
         [NotMapped]
