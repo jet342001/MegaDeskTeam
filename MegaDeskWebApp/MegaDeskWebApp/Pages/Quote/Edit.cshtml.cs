@@ -1,9 +1,12 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using MegaDeskWebApp.Data;
 using MegaDeskWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace MegaDeskWebApp.Pages.Quote
@@ -15,10 +18,13 @@ namespace MegaDeskWebApp.Pages.Quote
         public EditModel(MegaDeskContext context)
         {
             _context = context;
+            RushOrderDays = new SelectList(new List<string>{"3","5","7","14"});
         }
 
         [BindProperty]
         public DeskQuote DeskQuote { get; set; }
+
+        public SelectList RushOrderDays { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

@@ -1,4 +1,5 @@
 ﻿@page
+@using MegaDeskWebApp.Models
 @model MegaDeskWebApp.Pages.Quote.CreateModel
 
 @{
@@ -13,6 +14,16 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DeskQuote.FirstName" class="control-label"></label>
+                <input asp-for="DeskQuote.FirstName" class="form-control" />
+                <span asp-validation-for="DeskQuote.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeskQuote.LastName" class="control-label"></label>
+                <input asp-for="DeskQuote.LastName" class="form-control" />
+                <span asp-validation-for="DeskQuote.LastName" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.Width" class="control-label"></label>
                 <input asp-for="DeskQuote.Width" class="form-control" />
@@ -30,28 +41,19 @@
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.SurfaceMaterial" class="control-label"></label>
-                <input asp-for="DeskQuote.SurfaceMaterial" class="form-control" />
+                <select asp-for="DeskQuote.SurfaceMaterial" onchange="updateImage()">
+                    @foreach (var material in DeskQuote.SurfaceMaterials)
+                    {
+                        <option value="@material.Name" title="@material.Url">@material.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="DeskQuote.SurfaceMaterial" class="text-danger"></span>
+                <img id="SurfaceMaterialImage" src="@DeskQuote.SurfaceMaterials.First().Url" alt="@DeskQuote.SurfaceMaterials.First().Name" />
             </div>
             <div class="form-group">
                 <label asp-for="DeskQuote.RushOrderDays" class="control-label"></label>
-                <input asp-for="DeskQuote.RushOrderDays" class="form-control" />
+                @Html.DropDownListFor(m => m.DeskQuote.RushOrderDays, @Model.RushOrderDays, new { @class = "form-control" })
                 <span asp-validation-for="DeskQuote.RushOrderDays" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.FirstName" class="control-label"></label>
-                <input asp-for="DeskQuote.FirstName" class="form-control" />
-                <span asp-validation-for="DeskQuote.FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.LastName" class="control-label"></label>
-                <input asp-for="DeskQuote.LastName" class="form-control" />
-                <span asp-validation-for="DeskQuote.LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeskQuote.TotalPrice" class="control-label"></label>
-                <input asp-for="DeskQuote.TotalPrice" class="form-control" />
-                <span asp-validation-for="DeskQuote.TotalPrice" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -66,4 +68,12 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+} 
+<script type="text/javascript">
+    updateImage = () => {
+        var selectMaterial = document.getElementById("DeskQuote_SurfaceMaterial");
+        var selectedOption = selectMaterial.options[selectMaterial.selectedIndex];
+        console.log(selectedOption.title);
+        document.getElementById("SurfaceMaterialImage").src = selectedOption.title;
+    }
+</script>

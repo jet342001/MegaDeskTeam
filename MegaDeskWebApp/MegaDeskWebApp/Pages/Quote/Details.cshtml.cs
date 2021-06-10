@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using MegaDeskWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +15,7 @@ namespace MegaDeskWebApp.Pages.Quote
             _context = context;
         }
 
-        public Models.DeskQuote DeskQuote { get; set; }
+        public DeskQuote DeskQuote { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

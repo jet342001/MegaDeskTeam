@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MegaDeskWebApp.Models
 {
@@ -14,9 +13,10 @@ namespace MegaDeskWebApp.Models
         const double WidthMax = 96;
         const double DepthMin = 12;
         const double DepthMax = 48;
-
+        
         public DeskQuote()
         {
+            
         }
 
         public int Id { get; set; }
@@ -33,30 +33,48 @@ namespace MegaDeskWebApp.Models
         [Range(0, 7)]
         public int Drawers { get; set; }
         
+        [Display(Name = "Surface Material")]
         [Required]
         public string SurfaceMaterial { get; set; }
 
+        [Display(Name = "Days to Build")]
         [Required]
         public int RushOrderDays { get; set; }
-        
+
+        [Display(Name = "First Name")]
         [Required]
         [StringLength(40, MinimumLength = 1)]
         public string FirstName { get; set; }
 
+        [Display(Name = "Last Name")]
         [Required]
         [StringLength(40, MinimumLength = 1)]
         public string LastName { get; set; }
 
 
         public DateTime QuoteDate => DateTime.Now;
-        public double TotalPrice { get; set; }
 
-        
+        [NotMapped]
+        [Display(Name = "Total Price")]
+        public double TotalPrice => CalculateTotalPrice();
+
+
         [NotMapped]
         public double SurfaceArea => Width * Depth;
 
+        [Display(Name = "Customer Name")]
         [NotMapped] 
         public string FullName => FirstName.Trim() + " " + LastName.Trim();
+
+        [NotMapped]
+        public static List<SurfaceMaterial> SurfaceMaterials => new()
+        {
+            new() {Name = "Oak", Price = 200, Url = "https://images-na.ssl-images-amazon.com/images/I/81WZIM51pML._AC_SX425_.jpg" },
+            new() {Name = "Laminate", Price = 100, Url = "https://images-na.ssl-images-amazon.com/images/I/71wBWdGQjGL._AC_SX425_.jpg" },
+            new() {Name = "Pine", Price = 50, Url = "https://images-na.ssl-images-amazon.com/images/I/61ssllf%2BFNL._AC_SY550_.jpg" },
+            new() {Name = "Rosewood", Price = 300, Url = "https://images-na.ssl-images-amazon.com/images/I/814Q0nD33wL._AC_SX425_.jpg" },
+            new() {Name = "Veneer", Price = 125, Url = "https://images-na.ssl-images-amazon.com/images/I/71K7-efqklL._AC_SX425_.jpg" }
+        };
 
 
         public bool CheckValidInputs()
@@ -74,36 +92,18 @@ namespace MegaDeskWebApp.Models
             double rushPrice = CalculateRushPrice();
             double surfacePrice = CalculateSurfacePrice() + CalculateSurfaceMaterialPrice();
             double drawerPrice = CalculateDrawerPrice();
-            TotalPrice = basePrice + rushPrice + surfacePrice + drawerPrice;
-            
-            return TotalPrice;
+
+            return basePrice + rushPrice + surfacePrice + drawerPrice;
         }
 
         public double CalculateSurfacePrice()
         {
-            if (SurfaceArea > 1000)
-            {
-                return SurfaceArea - 1000;
-            }
-            return 0;
+            return SurfaceArea > 1000 ? SurfaceArea - 1000 : 0;
         }
         public double CalculateSurfaceMaterialPrice()
         {
-            switch (SurfaceMaterial.ToLower())
-            {
-                case "oak":
-                    return 200;
-                case "laminate":
-                    return 100;
-                case "pine":
-                    return 50;
-                case "rosewood":
-                    return 300;
-                case "veneer":
-                    return 125;
-                default:
-                    return 0;
-            }
+            var material = SurfaceMaterials.SingleOrDefault(x => x.Name == SurfaceMaterial);
+            return material?.Price ?? 0;
         }
 
         public double CalculateDrawerPrice()
@@ -139,24 +139,18 @@ namespace MegaDeskWebApp.Models
                 }
             }
         }
-
-        public double GetTotalPrice()
-        {
-            CalculateTotalPrice();
-            return TotalPrice;
-        }
-
+        
         public string QuoteToString()
         {
             string stringQuote = "";
             stringQuote = stringQuote + Width + ",";
             stringQuote = stringQuote + Width + ",";
-            stringQuote = stringQuote + SurfaceMaterial.ToLower() + ",";
+            stringQuote = stringQuote + SurfaceMaterial + ",";
             stringQuote = stringQuote + Drawers + ",";
             stringQuote = stringQuote + RushOrderDays + ",";
-            stringQuote = stringQuote + FirstName.ToLower() + ",";
-            stringQuote = stringQuote + LastName.ToLower() + ",";
-            stringQuote = stringQuote + TotalPrice.ToString().ToLower();
+            stringQuote = stringQuote + FirstName + ",";
+            stringQuote = stringQuote + LastName + ",";
+            stringQuote = stringQuote + TotalPrice.ToString("C");
             return stringQuote;
         }
         
