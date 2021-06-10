@@ -53,7 +53,10 @@ namespace MegaDeskWebApp.Models
 
         
         [NotMapped]
-        public double SurfaceArea => Width * Depth; 
+        public double SurfaceArea => Width * Depth;
+
+        [NotMapped] 
+        public string FullName => FirstName.Trim() + " " + LastName.Trim();
 
 
         public bool CheckValidInputs()
