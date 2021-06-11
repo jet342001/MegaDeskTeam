@@ -19,11 +19,46 @@ namespace MegaDeskWebApp.Pages.Quote
             _context = context;
         }
 
-        public IList<DeskQuote> DeskQuote { get;set; }
+        public string DateSort { get; set; }
+        public string NameSort { get; set; }
 
-        public async Task OnGetAsync()
+        public IList<DeskQuote> DeskQuote { get;set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+        public string CurrentFilter { get; set; }
+        public string CurrentSort { get; set; }
+
+        public async Task OnGetAsync(string sortOrder, string searchString)
         {
             DeskQuote = await _context.DeskQuote.ToListAsync();
+
+            CurrentFilter = searchString;
+
+            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
+            NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
+            IQueryable<DeskQuote> quoteQuery = from s in _context.DeskQuote
+                                               select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                quoteQuery = quoteQuery.Where(s => s.FullName.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    quoteQuery = quoteQuery.OrderByDescending(s => s.FullName);
+                    break;
+                case "Date":
+                    quoteQuery = quoteQuery.OrderBy(s => s.QuoteDate);
+                    break;
+                case "date_desc":
+                    quoteQuery = quoteQuery.OrderByDescending(s => s.QuoteDate);
+                    break;
+            }
+
+            DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
         }
     }
 }

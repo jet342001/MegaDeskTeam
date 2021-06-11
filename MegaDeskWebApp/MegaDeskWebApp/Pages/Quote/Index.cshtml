@@ -13,7 +13,7 @@
 <form>
     <div>
         Search by Customer:
-        <input type="text" name="SearchString" value="" />
+        <input type="text" name="SearchString" value="@Model.CurrentFilter" />
     </div>
     <div>
         <input type="submit" value="Search" />
@@ -23,6 +23,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].QuoteDate)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.DeskQuote[0].Width)
             </th>
@@ -50,6 +53,9 @@
     <tbody>
 @foreach (var item in Model.DeskQuote) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuoteDate)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Width)
             </td>
