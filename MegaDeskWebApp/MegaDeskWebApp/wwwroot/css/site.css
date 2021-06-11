@@ -1,21 +1,115 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿/* Colors 
+    1. #114B5f Dark bluish
+    2. #456990  Lighter bluish
+    3. #E4FDE1 Light Green
+    4. # FF5B69 redish
+    5. #6B2737 wine
+*/
 
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+
+   
+
+.logo {
+    max-height: 4vh;
+    max-width: 4vh;
+}
+
+.navbar, footer {
+    background: #E4FDE1;
+}
+
+.navbar-nav a, .navbar-brand {
+    color: white;
+}
+
+.container {
+    color: white;
+}
+
+.container footer {
+    color:black;
+}
+
+.navbar-light .navbar-toggler, navbar-light a {
+    color: white;
+    border-color: rgba(244,244,240,1);
+}
+
+body {
+    font-family: 'Mate SC', serif;
+    background: #456990;
+}
 a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
+
+.btn {
+    background: #FF5F69;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn-2 {
+    background: #114B5f;
+    font-family: Arial;
+    margin: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    max-height: 4vh;
+    font-size: 80%;
+    border: none;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+}
+.btn-3 {
+    margin: 5px;
+    background: #E4FDE1;
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    max-height: 4vh;
+    font-size: 80%;
+    display: inline-flex;
+    align-items: center;
+}
+
+    .btn:hover {
+        background: #6B2737;
+        text-decoration: none;
+    }
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
 }
+table{
+    table-layout:fixed;
+}
 
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: none;
+    overflow: hidden;
+}
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  font-size: 80%;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -27,16 +121,25 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'Mate SC', serif;
 }
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+
+.quote-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#SrfaceMaterialImage {
+    max-width: 90%;
+}
+
+#SurfaceMaterialImage {
+    max-width: 100%;
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -62,10 +165,104 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+body a {
+    color: white;
 }
+.footer {
+    background: #E4FDE1;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.col-md-4{
+    min-width: 90%;
+}
+
+.row{
+    justify-content: center;
+}
+
+
+.details {
+    max-width: 80%;
+    margin: auto;
+}
+
+/*
+    quote specific
+*/
+
+table.table td, table.table th {
+    display: none;
+}
+    table.table td:nth-child(2), table.table th:nth-child(2) {
+        display: inline-block;
+        min-width: 8rem;
+        max-width: 8rem;
+    }
+
+    table.table td:nth-child(n+8), table.table th:nth-child(8) {
+        display: inline-block;
+    }
+
+    table.table th:nth-child(8) {
+        min-width: 5rem;
+        max-width: 8rem;
+    }
+
+a {
+    word-wrap: break-word;
+}
+table.table .item:nth-child(odd) {
+    background: #114B5f;
+    color: white;
+    padding: 5px;
+}
+.table td, .table th {
+    border: none;
+}
+.table-header {
+    border:none;
+    max-width: 100%;
+}
+    /*
+
+    For large screens
+
+*/
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+
+        .logo {
+            margin-right: 15px;
+        }
+
+        .quote-menu {
+            flex-direction: row;
+            align-items: center;
+            }
+        table.table td, table.table th {
+            display: inline-block;
+        }
+        table.table th {
+            max-width: 11%;
+
+        }
+            table .table td:nth-child(n-2){
+            max-width: 11%;
+            min-width: 10%;
+        }
+            table.table td:nth-child(9){
+                display: block;
+                max-width: 100%;
+            }
+    }
+
+
