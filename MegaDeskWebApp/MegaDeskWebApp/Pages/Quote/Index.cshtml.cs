@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MegaDeskWebApp.Data;
 using MegaDeskWebApp.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace MegaDeskWebApp.Pages.Quote
 {
@@ -30,7 +32,6 @@ namespace MegaDeskWebApp.Pages.Quote
 
         public async Task OnGetAsync(string sortOrder, string searchString)
         {
-            DeskQuote = await _context.DeskQuote.ToListAsync();
 
             CurrentFilter = searchString;
 
@@ -56,9 +57,13 @@ namespace MegaDeskWebApp.Pages.Quote
                 case "date_desc":
                     quoteQuery = quoteQuery.OrderByDescending(s => s.QuoteDate);
                     break;
+                default:
+                    quoteQuery = quoteQuery.OrderBy(s => s.TotalPrice);
+                    break;
             }
 
-            DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
+            // DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
+            DeskQuote = await _context.DeskQuote.AsNoTracking().ToListAsync();
         }
     }
 }
