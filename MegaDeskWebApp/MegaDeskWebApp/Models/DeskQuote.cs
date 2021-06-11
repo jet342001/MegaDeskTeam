@@ -51,7 +51,6 @@ namespace MegaDeskWebApp.Models
         [StringLength(40, MinimumLength = 1)]
         public string LastName { get; set; }
 
-
         public DateTime QuoteDate => DateTime.Now;
 
         [Display(Name = "Total Price")]
