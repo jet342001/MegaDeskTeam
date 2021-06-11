@@ -10,6 +10,16 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<form>
+    <div>
+        Search by Customer:
+        <input type="text" name="SearchString" value="" />
+    </div>
+    <div>
+        <input type="submit" value="Search" />
+        <a asp-page="./Index">Reset Search</a>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
