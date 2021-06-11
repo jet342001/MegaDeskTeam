@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{searchString?}"
 @model MegaDeskWebApp.Pages.Quote.IndexModel
 
 @{
@@ -11,14 +11,16 @@
     <a asp-page="Create">Create New</a>
 </p>
 <form>
-    <div>
-        Search by Customer:
-        <input type="text" name="SearchString" value="@Model.CurrentFilter" />
-    </div>
-    <div>
-        <input type="submit" value="Search" />
-        <a asp-page="./Index">Reset Search</a>
-    </div>
+    <p>
+        <div>
+            Search by Customer:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+        </div>
+        <div>
+            <input type="submit" value="Search" />
+            <a asp-page="./Index">Reset Search</a>
+        </div>
+    </p>
 </form>
 <table class="table">
     <thead>

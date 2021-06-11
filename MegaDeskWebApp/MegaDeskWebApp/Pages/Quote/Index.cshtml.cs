@@ -24,7 +24,7 @@ namespace MegaDeskWebApp.Pages.Quote
         public string DateSort { get; set; }
         public string NameSort { get; set; }
 
-        public IList<DeskQuote> DeskQuote { get;set; }
+        public IList<DeskQuote> DeskQuote { get; set; }
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
         public string CurrentFilter { get; set; }
@@ -43,7 +43,7 @@ namespace MegaDeskWebApp.Pages.Quote
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                quoteQuery = quoteQuery.Where(s => s.FullName.Contains(searchString));
+                quoteQuery = quoteQuery.Where(s => s.FullName.ToUpper().Contains(searchString.ToUpper()));
             }
 
             switch (sortOrder)
@@ -62,8 +62,7 @@ namespace MegaDeskWebApp.Pages.Quote
                     break;
             }
 
-            // DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
-            DeskQuote = await _context.DeskQuote.AsNoTracking().ToListAsync();
+            DeskQuote = await _context.DeskQuote.ToListAsync();
         }
     }
 }
