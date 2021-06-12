@@ -210,6 +210,7 @@ body a {
 .search-wrapper {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 a:hover {
