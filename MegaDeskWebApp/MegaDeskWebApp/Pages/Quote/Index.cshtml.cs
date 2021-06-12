@@ -43,13 +43,13 @@ namespace MegaDeskWebApp.Pages.Quote
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                quoteQuery = quoteQuery.Where(s => s.FullName.ToUpper().Contains(searchString.ToUpper()));
+                quoteQuery = quoteQuery.Where(s => s.FirstName.ToUpper().Contains(searchString.ToUpper()));
             }
 
             switch (sortOrder)
             {
                 case "name_desc":
-                    quoteQuery = quoteQuery.OrderByDescending(s => s.FullName);
+                    quoteQuery = quoteQuery.OrderByDescending(s => s.FirstName);
                     break;
                 case "Date":
                     quoteQuery = quoteQuery.OrderBy(s => s.QuoteDate);
@@ -62,7 +62,7 @@ namespace MegaDeskWebApp.Pages.Quote
                     break;
             }
 
-            DeskQuote = await _context.DeskQuote.ToListAsync();
+            DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
         }
     }
 }
