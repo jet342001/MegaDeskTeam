@@ -72,7 +72,7 @@ namespace MegaDeskWebApp.Models
 
         [Display(Name = "Customer Name")]
         [NotMapped] 
-        public string FullName => FirstName.Trim() + " " + LastName.Trim();
+        public string FullName => FirstName?.Trim() ?? "" + " " + LastName?.Trim() ?? "";
 
         [NotMapped]
         public static List<SurfaceMaterial> SurfaceMaterials => new()

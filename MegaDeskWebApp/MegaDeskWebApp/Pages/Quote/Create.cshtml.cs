@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace MegaDeskWebApp.Pages.Quote
                 return Page();
             }
 
+            DeskQuote.QuoteDate = DateTime.Now;
             _context.DeskQuote.Add(DeskQuote);
             await _context.SaveChangesAsync();
 
