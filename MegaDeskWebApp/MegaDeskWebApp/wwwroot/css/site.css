@@ -9,8 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 
-   
-
 .logo {
     max-height: 4vh;
     max-width: 4vh;
@@ -26,6 +24,7 @@
 
 .container {
     color: white;
+
 }
 
 .container footer {
@@ -45,6 +44,12 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+}
+
+.intro {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 
