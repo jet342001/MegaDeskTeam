@@ -10,16 +10,16 @@
 </p>
 
 <form>
-    <p>
+    <div class="search-wrapper">
         <div>
             Search by Customer:
             <input type="text" name="SearchString" value="@Model.CurrentFilter" />
         </div>
         <div>
-            <input class="btn-2" type="submit" value="Search" />
-            <a asp-page="./Index">Reset Search</a>
+            <input  type="submit" value="Search" />
+            <a class="link" asp-page="./Index">Reset Search</a>
         </div>
-    </p>
+    </div>
 
 </form>
 <table class="table">
@@ -53,40 +53,40 @@
             <th>
                 @Html.DisplayNameFor(model => model.DeskQuote[0].TotalPrice)
             </th>
-            <th></th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.DeskQuote) {
         <tr class="item">
-            <td>
+            <td title=@Html.DisplayFor(modelItem => item.QuoteDate)>
                 @Html.DisplayFor(modelItem => item.QuoteDate)
             </td>
-            <td class="fullname">
+            <td title=@item.FullName class="fullname">
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
-            <td>
+            <td title=@item.Width>
                 @Html.DisplayFor(modelItem => item.Width)
             </td>
-            <td>
+            <td title=@item.Depth>
                 @Html.DisplayFor(modelItem => item.Depth)
             </td>
-            <td>
+            <td title=@item.Drawers>
                 @Html.DisplayFor(modelItem => item.Drawers)
             </td>
-            <td>
+            <td title=@item.SurfaceMaterial>
                 @Html.DisplayFor(modelItem => item.SurfaceMaterial)
             </td>
-            <td>
+            <td title=@item.RushOrderDays>
                 @Html.DisplayFor(modelItem => item.RushOrderDays)
             </td>
-            <td>
+            <td title=@item.TotalPrice>
                 $@Html.DisplayFor(modelItem => item.TotalPrice).00
             </td>
-            <td>
-                <a class="btn-3" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a class="btn-3" asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a class="btn-3" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            <td class="actions-section">
+                <a  asp-page="./Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i></a> |
+                <a  asp-page="./Details" asp-route-id="@item.Id"><i class="fas fa-eye"></i></a> |
+                <a  asp-page="./Delete" asp-route-id="@item.Id"><i class="fas fa-trash"></i></a>
             </td>
         </tr>
 }

@@ -105,6 +105,10 @@ table{
     table-layout:fixed;
 }
 
+.table-header {
+    color: #f8f9fa;
+}
+
 .table thead th {
     vertical-align: bottom;
     border-bottom: none;
@@ -140,7 +144,8 @@ html {
 }
 
 #SurfaceMaterialImage {
-    max-width: 100%;
+    max-width: 15%;
+    margin-left: 15px;
 }
 
 .border-top {
@@ -202,20 +207,37 @@ body a {
     quote specific
 */
 
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+a:hover {
+    color: #bbb !important;
+    text-decoration: none;
+}
+
 table.table td, table.table th {
     display: none;
 }
-    table.table td:nth-child(2), table.table th:nth-child(2) {
-        display: inline-block;
+    table.table td:nth-child(2), table.table th:nth-child(2),
+    table.table td:nth-child(1), table.table th:nth-child(1) {
+        display: table-cell;
         min-width: 8rem;
         max-width: 8rem;
     }
 
+
     table.table td:nth-child(n+8), table.table th:nth-child(8) {
-        display: inline-block;
+        display: table-cell;
     }
 
     table.table th:nth-child(8) {
+        min-width: 5rem;
+        max-width: 8rem;
+    }
+    table.table th:nth-child(9) {
+        display: table-cell;
         min-width: 5rem;
         max-width: 8rem;
     }
@@ -235,6 +257,21 @@ table.table .item:nth-child(odd) {
     border:none;
     max-width: 100%;
 }
+.buttons-wrapper {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    margin-bottom: 15px;
+}
+.back-button{
+    display:flex;
+    align-items:center;
+    margin-right: 5px;
+}
+.submit-button{
+    padding: 8px;
+}
+
     /*
 
     For large screens
@@ -254,20 +291,33 @@ table.table .item:nth-child(odd) {
             align-items: center;
             }
         table.table td, table.table th {
-            display: inline-block;
+            display: table-cell;
         }
-        table.table th {
-            max-width: 11%;
+        table.table td {
+            text-align: center;
+        }
+        table.table td, th {
+            max-width: 12%;
+
 
         }
-            table .table td:nth-child(n-2){
-            max-width: 11%;
-            min-width: 10%;
-        }
-            table.table td:nth-child(9){
-                display: block;
-                max-width: 100%;
+
+        table.table td:nth-child(2), table.table th:nth-child(2) {
+            max-width: max-content;
             }
+            table.table td:nth-child(n+8), table.table th:nth-child(8){
+                display: table-cell;
+            }
+
+            .actions-section {
+                max-width: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                overflow:visible;
+            }
+            
+     
     }
 
 

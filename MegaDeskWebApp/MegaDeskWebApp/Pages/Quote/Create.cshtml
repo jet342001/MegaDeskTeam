@@ -55,15 +55,14 @@
                 @Html.DropDownListFor(m => m.DeskQuote.RushOrderDays, @Model.RushOrderDays, new { @class = "form-control" })
                 <span asp-validation-for="DeskQuote.RushOrderDays" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="buttons-wrapper">
+                <a class="back-button" asp-page="Index">Back to List</a>
+
+                <input  type="submit" value="Create" class=" submit-button btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
 
-<div>
-    <a asp-page="Index">Back to List</a>
 </div>
 
 @section Scripts {

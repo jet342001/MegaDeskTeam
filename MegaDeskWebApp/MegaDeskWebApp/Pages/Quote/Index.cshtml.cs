@@ -20,14 +20,23 @@ namespace MegaDeskWebApp.Pages.Quote
         {
             _context = context;
         }
+        public IList<DeskQuote> DeskQuote { get; set; }
 
+
+        [BindProperty(SupportsGet = true)]
         public string DateSort { get; set; }
+
+
+        [BindProperty(SupportsGet = true)]
         public string NameSort { get; set; }
 
-        public IList<DeskQuote> DeskQuote { get; set; }
+
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
+
+
         public string CurrentFilter { get; set; }
+
         public string CurrentSort { get; set; }
 
         public async Task OnGetAsync(string sortOrder, string searchString)
@@ -35,21 +44,21 @@ namespace MegaDeskWebApp.Pages.Quote
 
             CurrentFilter = searchString;
 
-            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
             NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
 
             IQueryable<DeskQuote> quoteQuery = from s in _context.DeskQuote
                                                select s;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                quoteQuery = quoteQuery.Where(s => s.FullName.ToUpper().Contains(searchString.ToUpper()));
+                quoteQuery = quoteQuery.Where(s => s.FirstName.ToUpper().Contains(searchString.ToUpper()));
             }
 
             switch (sortOrder)
             {
                 case "name_desc":
-                    quoteQuery = quoteQuery.OrderByDescending(s => s.FullName);
+                    quoteQuery = quoteQuery.OrderByDescending(s => s.FirstName);
                     break;
                 case "Date":
                     quoteQuery = quoteQuery.OrderBy(s => s.QuoteDate);
@@ -58,11 +67,11 @@ namespace MegaDeskWebApp.Pages.Quote
                     quoteQuery = quoteQuery.OrderByDescending(s => s.QuoteDate);
                     break;
                 default:
-                    quoteQuery = quoteQuery.OrderBy(s => s.TotalPrice);
+                    quoteQuery = quoteQuery.OrderBy(s => s.FirstName);
                     break;
             }
 
-            DeskQuote = await _context.DeskQuote.ToListAsync();
+            DeskQuote = await quoteQuery.AsNoTracking().ToListAsync();
         }
     }
 }
