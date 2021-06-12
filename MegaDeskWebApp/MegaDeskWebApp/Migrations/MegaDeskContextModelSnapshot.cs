@@ -52,9 +52,6 @@ namespace MegaDeskWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
-
                     b.Property<double>("Width")
                         .HasColumnType("float");
 
