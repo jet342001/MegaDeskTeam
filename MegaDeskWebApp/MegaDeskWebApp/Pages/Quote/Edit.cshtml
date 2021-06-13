@@ -57,17 +57,15 @@
                 <span asp-validation-for="DeskQuote.RushOrderDays" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                @Html.HiddenFor(m=>m.DeskQuote.QuoteDate)
-                <input type="submit" value="Save" class="btn btn-primary"/>
+            <div class="buttons-wrapper">
+                @Html.HiddenFor(m => m.DeskQuote.QuoteDate)
+                <a class="back-button" asp-page="./Index">Back to List</a>
+                <input type="submit" value="Save" class="submit-button btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
