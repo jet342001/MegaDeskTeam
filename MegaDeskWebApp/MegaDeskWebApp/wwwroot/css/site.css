@@ -210,8 +210,10 @@ body a {
 .search-wrapper {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+
 
 a:hover {
     color: #bbb !important;
@@ -320,5 +322,10 @@ table.table .item:nth-child(odd) {
             
      
     }
+    @media (max-width: 320px) {
+    .search-buttons {
+        margin-top: 21px;
+    }
+}
 
 

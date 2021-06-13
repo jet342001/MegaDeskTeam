@@ -15,7 +15,7 @@
             Search by Customer:
             <input type="text" name="SearchString" value="@Model.CurrentFilter" />
         </div>
-        <div>
+        <div class="search-buttons">
             <input  type="submit" value="Search" />
             <a class="link" asp-page="./Index">Reset Search</a>
         </div>
@@ -84,8 +84,8 @@
                 $@Html.DisplayFor(modelItem => item.TotalPrice).00
             </td>
             <td class="actions-section">
-                <a  asp-page="./Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i></a> |
-                <a  asp-page="./Details" asp-route-id="@item.Id"><i class="fas fa-eye"></i></a> |
+                <a  asp-page="./Edit" asp-route-id="@item.Id"><i class="fas fa-edit"></i></a> 
+                <a  asp-page="./Details" asp-route-id="@item.Id"><i class="fas fa-eye"></i></a> 
                 <a  asp-page="./Delete" asp-route-id="@item.Id"><i class="fas fa-trash"></i></a>
             </td>
         </tr>
